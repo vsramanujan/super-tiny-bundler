@@ -1,0 +1,33 @@
+{
+  "name": "derp_bundler",
+  "version": "1.0.0",
+  "description": "A simple, plain old bundler",
+  "main": "build/bundler.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon --ignore 'bundle.js' build/bundler.js",
+    "start": "concurrently npm:start:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/babel-core": "^6.25.6",
+    "@types/babel-traverse": "^6.25.5",
+    "@types/babylon": "^6.16.5",
+    "@types/debug": "^4.1.5",
+    "@types/node": "^13.7.0",
+    "@types/prettyjson": "0.0.29",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0",
+    "debug": "^4.1.1",
+    "prettyjson": "^1.2.1"
+  }
+}
